@@ -222,10 +222,15 @@
     currentProjectName = [NSString stringWithString:tempName];
     
     //create SubmenuItem with status set as first item
-    NSMenu *menu = [[NSMenu alloc] initWithTitle:currentProjectName];
-    NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:@"<unknown>" action:nil keyEquivalent:@""];
-    [menu addItem:item];
-    [statusMenu setSupermenu:menu];
+    NSMenu *subMenu = [[NSMenu alloc] init];
+    NSMenuItem *subMenuItem = [[NSMenuItem alloc] initWithTitle:currentProjectName action:nil keyEquivalent:@""];
+    
+    NSMenuItem *menuItemStatus = [[NSMenuItem alloc] initWithTitle:@"Status: <unknown>" action:nil keyEquivalent:@""];
+    [subMenu addItem:menuItemStatus];
+
+    [statusMenu setSubmenu:subMenu forItem:subMenuItem];
+    [statusMenu addItem:subMenuItem];
+    [statusMenu addItem:[NSMenuItem separatorItem]];
     //[self computeIgnoredPaths];
     //[self initializeEventStreamWithPath:[currentProjectURL path]];
 }
