@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D09577DF14DEEE48005B434F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09577DE14DEEE48005B434F /* Cocoa.framework */; };
+		D09577E914DEEE48005B434F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D09577E714DEEE48005B434F /* InfoPlist.strings */; };
+		D09577EB14DEEE48005B434F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D09577EA14DEEE48005B434F /* main.m */; };
+		D09577EF14DEEE48005B434F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D09577ED14DEEE48005B434F /* Credits.rtf */; };
+		D09577F214DEEE48005B434F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09577F114DEEE48005B434F /* AppDelegate.m */; };
+		D09577F514DEEE48005B434F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09577F314DEEE48005B434F /* MainMenu.xib */; };
+		D09577F814DEEE48005B434F /* VagrantX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09577F614DEEE48005B434F /* VagrantX.xcdatamodeld */; };
+		D095780014DEEE48005B434F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09577FF14DEEE48005B434F /* SenTestingKit.framework */; };
+		D095780114DEEE48005B434F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09577DE14DEEE48005B434F /* Cocoa.framework */; };
+		D095780914DEEE48005B434F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D095780714DEEE48005B434F /* InfoPlist.strings */; };
+		D095780C14DEEE48005B434F /* VagrantXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D095780B14DEEE48005B434F /* VagrantXTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D095780214DEEE48005B434F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D09577D114DEEE48005B434F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D09577D914DEEE48005B434F;
+			remoteInfo = VagrantX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D09577DA14DEEE48005B434F /* VagrantX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VagrantX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09577DE14DEEE48005B434F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D09577E114DEEE48005B434F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D09577E214DEEE48005B434F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D09577E314DEEE48005B434F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D09577E614DEEE48005B434F /* VagrantX-Info.plist */ = {isa = PBXFileReference; path = "VagrantX-Info.plist"; sourceTree = "<group>"; };
+		D09577E814DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D09577EA14DEEE48005B434F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D09577EC14DEEE48005B434F /* VagrantX-Prefix.pch */ = {isa = PBXFileReference; path = "VagrantX-Prefix.pch"; sourceTree = "<group>"; };
+		D09577EE14DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D09577F014DEEE48005B434F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D09577F114DEEE48005B434F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D09577F414DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D09577F714DEEE48005B434F /* VagrantX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VagrantX.xcdatamodel; sourceTree = "<group>"; };
+		D09577FE14DEEE48005B434F /* VagrantXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VagrantXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09577FF14DEEE48005B434F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D095780614DEEE48005B434F /* VagrantXTests-Info.plist */ = {isa = PBXFileReference; path = "VagrantXTests-Info.plist"; sourceTree = "<group>"; };
+		D095780814DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D095780A14DEEE48005B434F /* VagrantXTests.h */ = {isa = PBXFileReference; path = VagrantXTests.h; sourceTree = "<group>"; };
+		D095780B14DEEE48005B434F /* VagrantXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VagrantXTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D09577D714DEEE48005B434F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09577DF14DEEE48005B434F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09577FA14DEEE48005B434F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095780014DEEE48005B434F /* SenTestingKit.framework in Frameworks */,
+				D095780114DEEE48005B434F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D09577CF14DEEE48005B434F = {
+			isa = PBXGroup;
+			children = (
+				D09577E414DEEE48005B434F /* VagrantX */,
+				D095780414DEEE48005B434F /* VagrantXTests */,
+				D09577DD14DEEE48005B434F /* Frameworks */,
+				D09577DB14DEEE48005B434F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D09577DB14DEEE48005B434F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D09577DA14DEEE48005B434F /* VagrantX.app */,
+				D09577FE14DEEE48005B434F /* VagrantXTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D09577DD14DEEE48005B434F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D09577DE14DEEE48005B434F /* Cocoa.framework */,
+				D09577FF14DEEE48005B434F /* SenTestingKit.framework */,
+				D09577E014DEEE48005B434F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D09577E014DEEE48005B434F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D09577E114DEEE48005B434F /* AppKit.framework */,
+				D09577E214DEEE48005B434F /* CoreData.framework */,
+				D09577E314DEEE48005B434F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D09577E414DEEE48005B434F /* VagrantX */ = {
+			isa = PBXGroup;
+			children = (
+				D09577F014DEEE48005B434F /* AppDelegate.h */,
+				D09577F114DEEE48005B434F /* AppDelegate.m */,
+				D09577F314DEEE48005B434F /* MainMenu.xib */,
+				D09577F614DEEE48005B434F /* VagrantX.xcdatamodeld */,
+				D09577E514DEEE48005B434F /* Supporting Files */,
+			);
+			path = VagrantX;
+			sourceTree = "<group>";
+		};
+		D09577E514DEEE48005B434F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D09577E614DEEE48005B434F /* VagrantX-Info.plist */,
+				D09577E714DEEE48005B434F /* InfoPlist.strings */,
+				D09577EA14DEEE48005B434F /* main.m */,
+				D09577EC14DEEE48005B434F /* VagrantX-Prefix.pch */,
+				D09577ED14DEEE48005B434F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D095780414DEEE48005B434F /* VagrantXTests */ = {
+			isa = PBXGroup;
+			children = (
+				D095780A14DEEE48005B434F /* VagrantXTests.h */,
+				D095780B14DEEE48005B434F /* VagrantXTests.m */,
+				D095780514DEEE48005B434F /* Supporting Files */,
+			);
+			path = VagrantXTests;
+			sourceTree = "<group>";
+		};
+		D095780514DEEE48005B434F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D095780614DEEE48005B434F /* VagrantXTests-Info.plist */,
+				D095780714DEEE48005B434F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D09577D914DEEE48005B434F /* VagrantX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095780F14DEEE48005B434F /* Build configuration list for PBXNativeTarget "VagrantX" */;
+			buildPhases = (
+				D09577D614DEEE48005B434F /* Sources */,
+				D09577D714DEEE48005B434F /* Frameworks */,
+				D09577D814DEEE48005B434F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VagrantX;
+			productName = VagrantX;
+			productReference = D09577DA14DEEE48005B434F /* VagrantX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09577FD14DEEE48005B434F /* VagrantXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095781214DEEE48005B434F /* Build configuration list for PBXNativeTarget "VagrantXTests" */;
+			buildPhases = (
+				D09577F914DEEE48005B434F /* Sources */,
+				D09577FA14DEEE48005B434F /* Frameworks */,
+				D09577FB14DEEE48005B434F /* Resources */,
+				D09577FC14DEEE48005B434F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D095780314DEEE48005B434F /* PBXTargetDependency */,
+			);
+			name = VagrantXTests;
+			productName = VagrantXTests;
+			productReference = D09577FE14DEEE48005B434F /* VagrantXTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D09577D114DEEE48005B434F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Warren Douglas";
+			};
+			buildConfigurationList = D09577D414DEEE48005B434F /* Build configuration list for PBXProject "VagrantX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D09577CF14DEEE48005B434F;
+			productRefGroup = D09577DB14DEEE48005B434F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D09577D914DEEE48005B434F /* VagrantX */,
+				D09577FD14DEEE48005B434F /* VagrantXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D09577D814DEEE48005B434F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09577E914DEEE48005B434F /* InfoPlist.strings in Resources */,
+				D09577EF14DEEE48005B434F /* Credits.rtf in Resources */,
+				D09577F514DEEE48005B434F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09577FB14DEEE48005B434F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095780914DEEE48005B434F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D09577FC14DEEE48005B434F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D09577D614DEEE48005B434F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09577EB14DEEE48005B434F /* main.m in Sources */,
+				D09577F214DEEE48005B434F /* AppDelegate.m in Sources */,
+				D09577F814DEEE48005B434F /* VagrantX.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09577F914DEEE48005B434F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095780C14DEEE48005B434F /* VagrantXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D095780314DEEE48005B434F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D09577D914DEEE48005B434F /* VagrantX */;
+			targetProxy = D095780214DEEE48005B434F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D09577E714DEEE48005B434F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D09577E814DEEE48005B434F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D09577ED14DEEE48005B434F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D09577EE14DEEE48005B434F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D09577F314DEEE48005B434F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D09577F414DEEE48005B434F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D095780714DEEE48005B434F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D095780814DEEE48005B434F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D095780D14DEEE48005B434F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D095780E14DEEE48005B434F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D095781014DEEE48005B434F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VagrantX/VagrantX-Prefix.pch";
+				INFOPLIST_FILE = "VagrantX/VagrantX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D095781114DEEE48005B434F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VagrantX/VagrantX-Prefix.pch";
+				INFOPLIST_FILE = "VagrantX/VagrantX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D095781314DEEE48005B434F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VagrantX.app/Contents/MacOS/VagrantX";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VagrantX/VagrantX-Prefix.pch";
+				INFOPLIST_FILE = "VagrantXTests/VagrantXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D095781414DEEE48005B434F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VagrantX.app/Contents/MacOS/VagrantX";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VagrantX/VagrantX-Prefix.pch";
+				INFOPLIST_FILE = "VagrantXTests/VagrantXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D09577D414DEEE48005B434F /* Build configuration list for PBXProject "VagrantX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095780D14DEEE48005B434F /* Debug */,
+				D095780E14DEEE48005B434F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D095780F14DEEE48005B434F /* Build configuration list for PBXNativeTarget "VagrantX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095781014DEEE48005B434F /* Debug */,
+				D095781114DEEE48005B434F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D095781214DEEE48005B434F /* Build configuration list for PBXNativeTarget "VagrantXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095781314DEEE48005B434F /* Debug */,
+				D095781414DEEE48005B434F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D09577F614DEEE48005B434F /* VagrantX.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D09577F714DEEE48005B434F /* VagrantX.xcdatamodel */,
+			);
+			currentVersion = D09577F714DEEE48005B434F /* VagrantX.xcdatamodel */;
+			path = VagrantX.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D09577D114DEEE48005B434F /* Project object */;
+}
