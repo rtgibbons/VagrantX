@@ -3,7 +3,7 @@
 //  VagrantX
 //
 //  Created by Ryan Gibbons on 2/5/12.
-//  Copyright (c) 2012 Warren Douglas. All rights reserved.
+//  Copyright (c) 2012 Ryan Gibbons. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

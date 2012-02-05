@@ -3,21 +3,28 @@
 //  VagrantX
 //
 //  Created by Ryan Gibbons on 2/5/12.
-//  Copyright (c) 2012 Warren Douglas. All rights reserved.
+//  Copyright (c) 2012 Ryan Gibbons. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
 @implementation AppDelegate
 
-@synthesize window = _window;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize managedObjectContext = __managedObjectContext;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification { 
+    
+    //create MenuExtra and attached the NSMenu
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    
+    [statusItem setImage:[NSImage imageNamed:@"NSActionTemplate"]];
+    [statusItem setHighlightMode:YES];
+    [statusItem setMenu: statusMenu];
+    
+    
+    
 }
 
 /**
@@ -188,6 +195,39 @@
     }
 
     return NSTerminateNow;
+}
+
+- (IBAction)chooseVagrant:(id)sender{
+    
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    
+    [openPanel setCanChooseDirectories:YES];
+    [openPanel setCanCreateDirectories:YES];
+    [openPanel setPrompt:@"Choose Vagrant project"];
+    [openPanel setCanChooseFiles:NO];
+    
+    if ([openPanel runModal] != NSFileHandlingPanelOKButton)
+        return;
+    
+    [spinner setHidden:NO];
+    [spinner startAnimation:nil];
+    
+    currentProjectURL = [[openPanel URLs] objectAtIndex:0];
+    NSMutableString *tempName = [NSMutableString stringWithString:[[[openPanel URLs] objectAtIndex:0] lastPathComponent]];
+    
+    [tempName replaceOccurrencesOfString:@" "
+                              withString:@"_"
+                                 options:NSCaseInsensitiveSearch
+                                   range:NSMakeRange(0, [tempName length])];
+    currentProjectName = [NSString stringWithString:tempName];
+    
+    //create SubmenuItem with status set as first item
+    NSMenu *menu = [[NSMenu alloc] initWithTitle:currentProjectName];
+    NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:@"<unknown>" action:nil keyEquivalent:@""];
+    [menu addItem:item];
+    [statusMenu setSupermenu:menu];
+    //[self computeIgnoredPaths];
+    //[self initializeEventStreamWithPath:[currentProjectURL path]];
 }
 
 @end
