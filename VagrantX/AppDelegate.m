@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "JSON.h"
+#import "SBJSON.h"
 
 @implementation AppDelegate
 
@@ -228,12 +228,27 @@
     
     NSMenuItem *menuItemStatus = [[NSMenuItem alloc] initWithTitle:@"Status: <unknown>" action:nil keyEquivalent:@""];
     [subMenu addItem:menuItemStatus];
+    [subMenu addItem:[NSMenuItem separatorItem]];
 
     [statusMenu setSubmenu:subMenu forItem:subMenuItem];
-    [statusMenu addItem:subMenuItem];
-    [statusMenu addItem:[NSMenuItem separatorItem]];
-    //[self computeIgnoredPaths];
-    //[self initializeEventStreamWithPath:[currentProjectURL path]];
+    [statusMenu addItem:subMenuItem];    
+    
+    VagrantHiddenFile = [NSURL URLWithString:@".vagrant" relativeToURL:currentProjectURL];
+    
+    //[fm removeItemAtURL:XCodeSupportFolder error:nil];
+    
+    NSError *error;
+    NSStringEncoding encoding;
+    NSString *fileContents = [NSString stringWithContentsOfFile:[VagrantHiddenFile path] usedEncoding:&encoding error:&error];
+    
+    if (fileContents == nil) {
+        //file not found, inform user Virtualbox status is not-created
+        [subMenuItem setTitle:@"Status: not-create"];
+    } else {
+        SBJsonParser *json = [[SBJsonParser alloc ]init];
+        NSDictionary *object = [json objectWithString:fileContents error:nil];
+    }
+
 }
 
 @end

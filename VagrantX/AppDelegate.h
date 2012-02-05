@@ -9,8 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSFileManager *fm;
     NSStatusItem *statusItem;
     NSURL *currentProjectURL;
+    NSURL *VagrantHiddenFile;
     NSString *currentProjectName;
     
     IBOutlet NSMenu *statusMenu;
