@@ -36,20 +36,20 @@
 		D09577E114DEEE48005B434F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D09577E214DEEE48005B434F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D09577E314DEEE48005B434F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D09577E614DEEE48005B434F /* VagrantX-Info.plist */ = {isa = PBXFileReference; path = "VagrantX-Info.plist"; sourceTree = "<group>"; };
+		D09577E614DEEE48005B434F /* VagrantX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VagrantX-Info.plist"; sourceTree = "<group>"; };
 		D09577E814DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D09577EA14DEEE48005B434F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D09577EC14DEEE48005B434F /* VagrantX-Prefix.pch */ = {isa = PBXFileReference; path = "VagrantX-Prefix.pch"; sourceTree = "<group>"; };
+		D09577EC14DEEE48005B434F /* VagrantX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VagrantX-Prefix.pch"; sourceTree = "<group>"; };
 		D09577EE14DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D09577F014DEEE48005B434F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D09577F014DEEE48005B434F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D09577F114DEEE48005B434F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D09577F414DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D09577F714DEEE48005B434F /* VagrantX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VagrantX.xcdatamodel; sourceTree = "<group>"; };
 		D09577FE14DEEE48005B434F /* VagrantXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VagrantXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09577FF14DEEE48005B434F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D095780614DEEE48005B434F /* VagrantXTests-Info.plist */ = {isa = PBXFileReference; path = "VagrantXTests-Info.plist"; sourceTree = "<group>"; };
+		D095780614DEEE48005B434F /* VagrantXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VagrantXTests-Info.plist"; sourceTree = "<group>"; };
 		D095780814DEEE48005B434F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D095780A14DEEE48005B434F /* VagrantXTests.h */ = {isa = PBXFileReference; path = VagrantXTests.h; sourceTree = "<group>"; };
+		D095780A14DEEE48005B434F /* VagrantXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VagrantXTests.h; sourceTree = "<group>"; };
 		D095780B14DEEE48005B434F /* VagrantXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VagrantXTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
