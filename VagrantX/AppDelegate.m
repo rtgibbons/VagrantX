@@ -235,8 +235,6 @@
     
     VagrantHiddenFile = [NSURL URLWithString:@".vagrant" relativeToURL:currentProjectURL];
     
-    //[fm removeItemAtURL:XCodeSupportFolder error:nil];
-    
     NSError *error;
     NSStringEncoding encoding;
     NSString *fileContents = [NSString stringWithContentsOfFile:[VagrantHiddenFile path] usedEncoding:&encoding error:&error];
@@ -247,6 +245,29 @@
     } else {
         SBJsonParser *json = [[SBJsonParser alloc ]init];
         NSDictionary *object = [json objectWithString:fileContents error:nil];
+        //object['active'] will be a string in single vm's or another Dictionary in multi-vm setups
+        if ([[object objectForKey:@"active"] isKindOfClass:[NSString class]] ) {
+            NSString *uuid = [object objectForKey:@"active"];
+
+            [menuItemStatus setTitle:@"Status: created"];
+
+            NSLog(@"uuid: %@", uuid);
+        } else {
+            NSDictionary *vm = [object objectForKey:@"active"];
+            NSEnumerator *enumerator = [vm keyEnumerator];
+            id key;
+
+            [subMenu removeAllItems];
+            while (key = [enumerator nextObject]) {
+                NSMenuItem *menuItemVM = [[NSMenuItem alloc] init];
+                NSString *uuid = [vm objectForKey:key];
+
+                [menuItemVM setTitle:[NSString stringWithFormat:@"%@: created", key]];
+                [subMenu addItem:menuItemVM];
+
+                NSLog(@"%@: %@", key, uuid);
+            }
+        }
     }
 
 }
